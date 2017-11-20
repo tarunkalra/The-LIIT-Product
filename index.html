@@ -13,6 +13,9 @@
 	</head>
 	<body>
 
+
+
+
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
@@ -36,27 +39,46 @@
 					<div class="flex ">
 
 						<div>
-							<span class="icon fa-users"></span>
+							<span><button onclick="openIt1()"><span class="icon fa-users"></span></button><br></span>
+							<br>
 							<h3>Live Audience</h3>
-							<p>LOL</p>
+							<script>
+							function openIt1(){
+							    window.open("video Url");
+							}
+							</script>
 						</div>
 
 						<div>
-							<span class="icon fa-clock-o"></span>
-							<h3>Right Time?</h3>
-							<p>LOL</p>
+							<span><button onclick="openIt2()"><span class="icon fa-clock-o"></span></button><br></span><br>
+							<h3>Right time to go?</h3>
+							<script>
+							function openIt2(){
+							    window.open("");
+							}
+							</script>
 						</div>
 
 						<div>
-							<span class="icon fa-video-camera"></span>
-							<h3>Live Audience</h3>
-							<p>LOL</p>
+
+							<span><button onclick="openIt3()"><span class="icon fa-video-camera"></span></button><br></span>
+							<br>
+							<h3>Live Feed</h3>
+							<script>
+							function openIt3(){
+							    window.open("./video");
+							}
+							</script>
 						</div>
 
 					</div>
 <div class="flex">
 					<footer>
-						<a href="#" class="button btn btn-sucess">Yay! Go</a>
+						<button id="btn1" class="button btn btn-sucess" onclick="disableElement()">Yay! Go</button>
+						<script>
+						 	function disableElement(){
+								document.getElementById("btn1").disabled=true;
+							}
 					</footer>
 				</div>
 				</div>
